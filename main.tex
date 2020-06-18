@@ -1,0 +1,58 @@
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{cancel}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\usepackage[a4paper,width=150mm,top=20mm,bottom=20mm, left=30mm, right=20mm]{geometry}
+\definecolor{linkcolor}{rgb}{0,0,1} % цвет ссылок
+\definecolor{urlcolor}{rgb}{0,0,1} % цвет гиперссылок
+	
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+ 
+\hypersetup{pdfstartview=FitH,  linkcolor=linkcolor,urlcolor=urlcolor,citecolor=urlcolor, colorlinks=true}
+ 
+ \makeatletter
+
+ \makeatother
+
+\begin{document}
+
+
+\input{title.tex}
+
+
+
+\tableofcontents{}
+
+\pagebreak[4]
+
+
+\renewcommand{\theequation}{\arabic{equation}}
+
+\input{intro.tex}
+\input{krechmann.tex}
+\input{modes.tex}
+
+
+\appendix
+
+
+
+
+
+\bibliographystyle{unsrturl}
+\addcontentsline{toc}{section}{Список литературы}
+\bibliography{biblio}
+
+\end{document}

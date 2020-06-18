@@ -1,0 +1,118 @@
+\section{Моды волновода}
+Klir
+\begin{equation}
+\operatorname{rot} \mathbf{H}=\frac{\partial D}{\partial t}, \quad \text { rot } \mathbf{E}=-\frac{\partial B}{\partial t}
+\end{equation}
+
+\begin{equation}\frac{1}{r} \frac{\partial H_{z}}{\partial \varphi}-\frac{\partial H_{\varphi}}{\partial z}=-i \omega \varepsilon E_{r}
+\end{equation}
+
+\begin{equation}
+ \frac{\partial H_{r}}{\partial z}-\frac{\partial H_{z}}{\partial r}=-i \omega \varepsilon E_{\varphi}
+\end{equation}
+ 
+\begin{equation}\frac{1}{r} \frac{\partial}{\partial r}\left(r H_{\varphi}\right)-\frac{1}{r} \frac{\partial H_{r}}{\partial \varphi}=-i \omega \varepsilon E_{z}
+\end{equation}
+
+\begin{equation}\frac{1}{r} \frac{\partial E_{z}}{\partial \varphi}-\frac{\partial E_{\varphi}}{\partial z}=i \omega \mu H_{r}, \quad \frac{\partial E_{r}}{\partial z}-\frac{\partial E_{z}}{\partial r}=i \omega \mu H_{\varphi}
+\end{equation}
+
+\begin{equation}\frac{1}{r} \frac{\partial}{\partial r}\left(r E_{\varphi}\right)-\frac{1}{r} \frac{\partial E_{r}}{\partial \varphi}=i \omega \mu H_{z}
+\end{equation}
+
+
+\begin{equation}
+E_{r}=\frac{1}{k^{2}-h^{2}}\left(\text { ih } \frac{\partial E_{z}}{\partial r}+\frac{i \omega \mu}{r} \frac{\partial H_{3}}{\partial \varphi}\right) 
+\end{equation}
+
+\begin{equation}
+E_{\varphi}=\frac{1}{k^{2}-h^{2}}\left(\frac{i h}{r} \frac{\partial E_{z}}{\partial \varphi}-i \omega \mu \frac{\partial H_{z}}{\partial r}\right)
+\end{equation}
+
+ 
+ \begin{equation}
+ H_{r}=\frac{1}{k^{2}-h^{2}}\left(\text { ih } \frac{\partial H_{\mathrm{z}}}{\partial r}-\frac{i \omega e}{r} \frac{\partial E_{z}}{\partial \varphi}\right)
+ \end{equation}
+  
+ \begin{equation}
+ H_{\varphi}=\frac{1}{k^{2}-h^{2}}\left(\frac{i h}{r} \frac{\partial H_{z}}{\partial \varphi}+i \omega e \frac{\partial E_{z}}{\partial r}\right)
+ \end{equation}
+ 
+ \begin{equation}
+ \frac{\partial^{2} U}{\partial r^{2}}+\frac{1}{r} \frac{\partial U}{\partial r}+\frac{1}{r^{2}} \frac{\partial^{2} U}{\partial \varphi^{2}}+\left(k^{2}-h^{2}\right) U=0
+ \end{equation}
+ 
+ \begin{equation}U=F(r) e^{i m \varphi}\end{equation}
+ 
+ \begin{equation}\frac{\partial^{2} F}{\partial r^{2}}+\frac{1}{r} \frac{\partial F}{\partial r}+\left(u^{2}-\frac{m^{2}}{r^{2}}\right) F=0\end{equation}
+ 
+ 
+ \begin{equation}\begin{aligned}
+ E_{z}^{(1)}=& \sum_{m=-\infty}^{\infty} A_{m} J_{m}(u r) \cos m \varphi \exp (i h z-i \omega t) \\
+ H_{z}^{(1)}=& \sum_{m=-\infty}^{\infty} B_{m} J_{m}(u r) \cos \left(m \varphi+\beta_{m}\right) \exp (i h z-i \omega t)
+ \end{aligned}\end{equation}
+ 
+ 
+ \begin{equation}
+ E_{z}^{(2)}=\sum_{m=-\infty}^{\infty} C_{m} K_{m}(v r) \cos m \varphi \exp (t h z-i \omega t)
+ \end{equation}
+ 
+ \begin{equation}
+ H_{z}^{(2)}=\sum_{m=0}^{\infty} D_{m} K_{m}(v r) \cos \left(m \varphi+\beta_{m}\right) \exp (i h z-i \omega t)
+ \end{equation}
+ 
+ \begin{equation}
+ v=\sqrt{h^{2}-k_{2}^{2}}, k_{3} \leqslant h \leqslant k_{1}
+ \end{equation}
+ 
+ \begin{equation}
+ \begin{aligned}
+ E_{\varphi}^{(1)} &=-\sum_{m=-\infty}^{\infty}\left[A_{m} \frac{i m h}{u^{2} r} J_{m}(u r) \sin m \varphi-\right.\\
+ &\left.-B_{m} \frac{i \omega \mu}{u} J_{m}^{\prime}(u r) \cos \left(m \varphi+\beta_{m}\right)\right]
+ \end{aligned}
+ \end{equation}
+ 
+ \begin{equation}\begin{aligned}
+ H_{\varphi}^{(1)}=-& \sum_{m=-\infty}^{\infty}\left[B_{m} \frac{i m h}{u^{2} r} J_{m}(u r) \sin \left(m \varphi+\beta_{m}\right)+\right.\\
+ &\left.\left.+A_{m} \frac{i \omega e_{1}}{u} J_{m}(u r) \cos m \varphi\right)\right]
+ \end{aligned}
+ \end{equation}
+ 
+ 
+ \begin{equation}\begin{array}{l}
+ E_{\varphi}^{(2)}=\sum_{m=-\infty}^{\infty}\left[C_{m} \frac{i m h}{v^{2} r} K_{m}(v r) \sin \left(m \varphi+\beta_{m}\right)-\right. \\
+ \left.\qquad-D_{m} \frac{i \omega \varepsilon_{2}}{v} K_{m}^{\prime}(v r) \cos m \varphi\right]
+ \end{array}\end{equation}
+ 
+ \begin{equation}\begin{aligned}
+ H_{\varphi}^{(2)}=& \sum_{m=-\infty}^{\infty}\left[D_{m} \frac{i m h}{v^{2} r} K_{m}\left(v^{2} r\right) \sin \left(m \varphi+\beta_{m}\right)-\right.\\
+ &\left.-C_{m} \frac{i \omega \varepsilon_{2}}{v} K_{m}^{\prime}(v r) \cos m \varphi\right]
+ \end{aligned}\end{equation}
+ 
+ 
+ \begin{equation}-A_{m} \frac{m h}{p^{2}} J_{m}(p) \sin m \varphi-B_{m} \frac{\omega \mu}{p} J_{m}^{\prime}(p) \cos \left(m \varphi+\beta_{m}\right)=\end{equation}
+ 
+ \begin{equation}\begin{array}{c}
+ =C_{m} \frac{m h}{q^{2}} K_{m}(q) \sin m \varphi+D_{m} \frac{\omega \mu}{q} K_{m}^{\prime}(q) \cos \left(m \varphi+\beta_{m}\right) \\
+ A_{m} J_{m}(p)=C_{m} K_{m}(q)
+ \end{array}\end{equation}
+ 
+ \begin{equation}\begin{array}{c}
+ -B_{m} \frac{m h}{p^{2}} J_{m}(p) \sin \left(m \varphi+\beta_{m}\right)+A_{m} \frac{\omega e_{1}}{p} J_{m}^{\prime}(p) \cos m \varphi \\
+ =D_{m} \frac{m h}{q^{2}} K_{m}\left(q_{1}\right) \sin \left(m \varphi+\beta_{m}\right)-C_{m} \frac{\omega e_{9}}{q} K_{m}^{\prime}(q) \cos m \varphi \\
+ B_{m} J_{m}(p)=D_{m} K_{m}(q)
+ \end{array}\end{equation}
+ 
+ 
+ \begin{equation}\begin{array}{c}
+ {\left[f_{m}(p)+g_{m}(q)\right]\left[\frac{\varepsilon_{1}}{e_{s}} f_{m}(p)+g_{m}(q)\right]} \\
+ \quad \frac{m^{2} b^{2}}{k_{2}^{2}}\left(\frac{1}{p^{2}}+\frac{1}{q^{2}}\right) \\
+ =\frac{\sin m \varphi \sin \left(m \varphi+\beta_{m}\right)}{\cos m \varphi \cos \left(m \varphi+\beta_{m}\right)}
+ \end{array}\end{equation}
+ 
+ \begin{equation}f_{m}=\frac{J_{m}^{\prime}(p)}{p J_{m}(p)}, \quad g_{m}(q)=\frac{K_{m}^{\prime}(q)}{q R_{m}(q)}\end{equation}
+ 
+ \begin{equation}p^{2}+q^{2}=a^{2}\left(k_{1}^{2}-k_{2}^{2}\right)\end{equation}
+ 
+ 
+ \begin{equation}\left[f_{m}(p)+g_{m}(q)\right]\left[\frac{\varepsilon_{1}}{\varepsilon_{2}} f_{m}(p)+g_{m}(q)\right]=\frac{m^{2} h^{2}}{k_{2}^{2}}\left(\frac{1}{p^{2}}+\frac{1}{q^{2}}\right)^{2}\end{equation}
