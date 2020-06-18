@@ -1,4 +1,32 @@
 \section{Эффекти Кречмана}
+\begin{center}
+	\begin{tikzpicture}
+	
+	\node[] at (60:1.5)  {$\theta$};
+	\node[] at (35:1)  {$\alpha$};
+	\node[] at (12:6.2)  {$\beta$};
+	\coordinate (fov) at (2, 1);
+	
+	\draw[thick,blue, snake=coil,segment aspect=0.15] (fov) -- ++(220:1.5cm);
+	\draw[thick,red, snake=coil,segment aspect=0.15] (fov) -- ++(150:3cm);
+	\draw[thick,green, snake=coil,segment aspect=0.15] (5,1) -- ++(30:2cm);
+	
+	\draw[thick] (1,1) arc (180:215:1) ;
+	\draw[thick] (0.9,1) arc (180:150:1) ;
+	\draw[thick] (5.7,1) arc (0:30:0.6) ;
+	\draw[thick,->](8,1) -- (-1,1)  ;
+	
+	
+	\definecolor{color1}{RGB}{252,156,12};
+	\definecolor{color2}{RGB}{252,124,12};
+	\definecolor{color3}{RGB}{252,104,12};
+	\fill[fill=color1,opacity=.7]  (2,0) rectangle (3,2) ;
+	\fill[fill=color2,opacity=.7]  (3,0) rectangle (4,2) ;
+	\fill[fill=color3,opacity=.7]  (4,0) rectangle (5,2) ;
+	\end{tikzpicture}
+\end{center}
+
+
 
 Рассмотрим падение света на слоистую среду под углом $ 
 \theta_1 $ с коэффицентами  диэлектрическими проницаемостями $ \varepsilon_1, \varepsilon_2, \varepsilon_3 $ соответственно. 
@@ -67,3 +95,8 @@ t\\
 0 
 \end{pmatrix}
 $
+
+
+
+
+
