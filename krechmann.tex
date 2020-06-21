@@ -108,3 +108,37 @@ $
 
 
 
+\begin{tikzpicture}
+\begin{axis}[
+title={$ n(H_2 O) $},
+line width=2,
+enlargelimits=false,
+ylabel=$ R $,
+xlabel=$k/k_0$,
+label style={font=\bfseries\Large},
+legend style={at={( 0.8,0.2)},
+anchor=north west, font=\small},
+grid=major]
+
+\addplot +[mark=none] coordinates {(1.331,0) (1.331, 1)};
+\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
+\addplot[smooth,] table {krechman650nm.dat};
+
+\end{axis}
+
+
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}
+\begin{axis}[line width=2,enlargelimits=false,ylabel=$ R $,xlabel=$k/k_0$,label style={font=\bfseries\Large},legend style={at={( 0.8,0.2)}, anchor=north west, font=\small},tick label style={font=\bfseries},grid=major]
+\addplot +[mark=none] coordinates {(1.317,0) (1.317, 1)};
+\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
+\addplot[smooth,] table {krechman1550nm.dat};
+
+\end{axis}
+
+
+\end{tikzpicture}
+
