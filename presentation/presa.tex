@@ -76,7 +76,7 @@
 
 \title{Защита бакалаврской работы}
 \subtitle{Исследование свойств оптических волокон с брэгговскими решётками для сенсорных применений}
-\author[author1]{Барсегян Сергей Симонович\\[10mm]{\small научный руководитель: Дорофеенко Александр Викторович}}
+\author[]{Барсегян Сергей Симонович\\[10mm]{\small научный руководитель: Дорофеенко Александр Викторович}}
 \date{\today}
 \institute[]{Московский физико-технический институт \\ Национальный исследовательский университет}
 
@@ -96,6 +96,7 @@
 \section{Введение}
 \begin{frame}
 	
+	
 \end{frame}	
 \section{Мотивация}
 \begin{frame}
@@ -103,10 +104,43 @@
 \end{frame}	
 \section{Эффект Кречмана}
 \begin{frame}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1.1\linewidth]{screenshot006}
+		\caption{}
+		\label{fig:screenshot006}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{screenshot004}
+		\caption{}
+		\label{fig:screenshot004}
+	\end{figure}
 	
 \end{frame}	
+
+\begin{frame}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{screenshot005}
+		\caption{}
+		\label{fig:screenshot005}
+	\end{figure}
+
+\end{frame}
+
 \section{Моды волновода}
 \begin{frame}
+	$$
+	f_{m}(p)=\frac{J_{m}^{\prime}(p)}{p J_{m}(p)}, \quad g_{m}(q)=\frac{K_{m}^{\prime}(q)}{q K_{m}(q)} $$
+	$$p=u a, q=v a $$
+	$$p^{2}+q^{2}=a^{2}\left(k_{1}^{2}-k_{2}^{2}\right) $$
+	$${\left[f_{m}(p)+g_{m}(q)\right]\left[\frac{\varepsilon_{1}}{\varepsilon_{2}} f_{m}(p)+g_{m}(q)\right]=\frac{m^{2} h^{2}}{k_{2}^{2}}\left(\frac{1}{p^{2}}+\frac{1}{q^{2}}\right)^{2}}
+	$$
 	
 \end{frame}	
 \section{Брэгговская решётка}
@@ -116,9 +150,66 @@
 \section{Наклонная брэгговская решётка}
 \begin{frame}
 	
+$$R=\tanh ^{2}(\kappa L)$$
+
+$$\Delta n(x, y)=\Delta n \cos (4 \pi / \Lambda)(z \cos (\theta)+y \sin (\theta))$$
+	
+	
 \end{frame}	
+
+\begin{frame}
+	
+	$$\kappa=C \iint_{-\infty}^{\infty} \vec{E}_{\mathrm{core}}^{*} \cdot \vec{E}_{r} \Delta \mathrm{n}(\mathrm{x}, \mathrm{y}) \mathrm{d} \mathrm{xdy}$$
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{screenshot001}
+		\caption{}
+		\label{fig:screenshot001}
+	\end{figure}
+	
+	
+\end{frame}	
+
+
+\begin{frame}
+	$$
+	\Delta \lambda_{\mathrm{B}}=\left(2 \frac{N_{\mathrm{eff}}^{\text {core }} d \Lambda}{\cos (\theta)} \frac{d \Lambda}{d \varepsilon}+2 \frac{\Lambda}{\cos (\theta)} \frac{d N_{\text {eff }}^{\text {core }}}{d \varepsilon}\right) \Delta \varepsilon $$
+	$$
+	+\left(2 \frac{N_{\text {eff }}^{\text {core }}}{\cos (\theta)} \frac{d \Lambda}{d T}+2 \frac{\Lambda}{\cos (\theta)} \frac{d N_{\text {eff }}^{\text {core }}}{d T}\right) \Delta T $$
+	$$
+	\Delta \lambda^{\mathrm{r}}=\left(\frac{\left(N_{\text {eff }}^{\text {core }}+N_{\text {eff }}^{r}\right)}{\cos (\theta)} \frac{d \Lambda}{d \varepsilon}+\frac{\Lambda}{\cos (\theta)} \frac{d\left(N_{\text {eff }}^{\text {core }}+N_{\text {eff }}^{r}\right)}{d \varepsilon}\right)  \Delta \varepsilon $$
+	$$
+	+\left(\frac{\left(N_{\text {eff }}^{\text {core }}+N_{\text {eff }}^{r}\right)}{\cos (\theta)} \frac{d \Lambda}{d T}+\frac{\Lambda}{\cos (\theta)} \frac{d\left(N_{\text {eff }}^{\text {core }}+N_{\text {eff }}^{r}\right)}{d T}\right) \Delta T
+	$$
+	
+	
+	$$\Delta \lambda_{\mathrm{B}}-\Delta \lambda^{r}=\left(\frac{\left(N_{\mathrm{eff}}^{\mathrm{core}}-N_{\mathrm{eff}}^{r}\right)}{\cos (\theta)} \frac{d \Lambda}{d \varepsilon}\right) \Delta \varepsilon
+	$$
+\end{frame}	
+
+
+\begin{frame}
+\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{screenshot002}
+		\caption{}
+		\label{fig:screenshot002}
+\end{figure}
+	
+
+\end{frame}
+
 \section{Дисперсия плазмона}
 \begin{frame}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.0\linewidth]{screenshot003}
+		\caption{Дисперсия плазмона}
+		\label{fig:screenshot003}
+	\end{figure}
+	
 	
 \end{frame}	
 \section{Заключение}
