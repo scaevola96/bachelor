@@ -1,30 +1,6 @@
 \section{Эффект Кречмана}
-\begin{center}
-	\begin{tikzpicture}
-	
-	\node[] at (60:1.5)  {$\theta$};
-	\node[] at (35:1)  {$\alpha$};
-	\node[] at (12:6.2)  {$\beta$};
-	\coordinate (fov) at (2, 1);
-	
-	\draw[thick,blue, snake=coil,segment aspect=0.15] (fov) -- ++(220:1.5cm);
-	\draw[thick,red, snake=coil,segment aspect=0.15] (fov) -- ++(150:3cm);
-	\draw[thick,green, snake=coil,segment aspect=0.15] (5,1) -- ++(30:2cm);
-	
-	\draw[thick] (1,1) arc (180:215:1) ;
-	\draw[thick] (0.9,1) arc (180:150:1) ;
-	\draw[thick] (5.7,1) arc (0:30:0.6) ;
-	\draw[thick,->](8,1) -- (-1,1)  ;
-	
-	
-	\definecolor{color1}{RGB}{252,156,12};
-	\definecolor{color2}{RGB}{252,124,12};
-	\definecolor{color3}{RGB}{252,104,12};
-	\fill[fill=color1,opacity=.7]  (2,0) rectangle (3,2) ;
-	\fill[fill=color2,opacity=.7]  (3,0) rectangle (4,2) ;
-	\fill[fill=color3,opacity=.7]  (4,0) rectangle (5,2) ;
-	\end{tikzpicture}
-\end{center}
+
+
 
 
 
@@ -96,6 +72,62 @@ t\\
 \end{pmatrix}
 $$
 
+\begin{center}
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		title={$SiO_2 + Ag + H_2 O$},
+		line width=2,
+		enlargelimits=false,
+		ylabel=$ R $,
+		xlabel=$k/k_0$,
+		label style={font=\bfseries\Large},
+		legend style={at={( 0.8,0.2)},
+			anchor=north west, font=\small},
+		grid=major]
+		
+		\addplot +[mark=none] coordinates {(1.331,0) (1.331, 1)};
+		\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
+		\addplot[smooth,] table {krechman650nm.dat};
+		
+		\end{axis}
+		
+		
+		\end{tikzpicture}
+		\caption{Эффект Кречмана для серебра $ \lambda = 650 \text{нм} $}
+		\label{fig:krech1}
+		
+	\end{figure}
+\end{center}
+
+
+\begin{center}
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		title={$SiO_2 + Ag + H_2 O$},
+		line width=2,
+		enlargelimits=false,
+		ylabel=$ R $,
+		xlabel=$k/k_0$,
+		label style={font=\bfseries\Large},
+		legend style={at={( 0.8,0.2)},
+			anchor=north west, font=\small},
+		grid=major]
+		\addplot +[mark=none] coordinates {(1.317,0) (1.317, 1)};
+		\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
+		\addplot[smooth,] table {krechman1550nm.dat};
+		
+		\end{axis}
+		
+		
+		\end{tikzpicture}
+		\caption{Эффект Кречмана для серебра $ \lambda = 1550 \text{нм} $}
+		\label{fig:krech2}
+	\end{figure}
+\end{center}
 
 Решая эту систему уравнений относительно $ r $ получаем зависимость коэффицента отражения от угла падающей волны. Для $ p $ поляризации при определённой каллибровке толщины металлического слоя (условие на Кречманна???)
 можно наблюдать, что при некотором угле амплитуда отражённой волны полностью зануляется, что часто называют нарушенным полным отражением или эффектом Кречманна.
@@ -105,43 +137,4 @@ $$
 
 
 
-\begin{center}
-	\begin{tikzpicture}
-	\begin{axis}[
-	title={$ n(H_2 O) $},
-	line width=2,
-	enlargelimits=false,
-	ylabel=$ R $,
-	xlabel=$k/k_0$,
-	label style={font=\bfseries\Large},
-	legend style={at={( 0.8,0.2)},
-		anchor=north west, font=\small},
-	grid=major]
-	
-	\addplot +[mark=none] coordinates {(1.331,0) (1.331, 1)};
-	\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
-	\addplot[smooth,] table {krechman650nm.dat};
-	
-	\end{axis}
-	
-	
-	\end{tikzpicture}
-	
-\end{center}
 
-
-
-\begin{center}
-
-\begin{tikzpicture}
-\begin{axis}[line width=2,enlargelimits=false,ylabel=$ R $,xlabel=$k/k_0$,label style={font=\bfseries\Large},legend style={at={( 0.8,0.2)}, anchor=north west, font=\small},tick label style={font=\bfseries},grid=major]
-\addplot +[mark=none] coordinates {(1.317,0) (1.317, 1)};
-\addplot +[mark=none] coordinates {(1.5,0) (1.5, 1)};
-\addplot[smooth,] table {krechman1550nm.dat};
-
-\end{axis}
-
-
-\end{tikzpicture}
-
-\end{center}
